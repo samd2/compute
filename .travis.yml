@@ -13,7 +13,7 @@ env:
     - OPENCL_ICD_LIB=${OPENCL_ROOT}/icd/build/lib/libOpenCL.so
     # POCL
     - POCL_BRANCH=release_1_2 # branch/tag
-    - POCL_LLVM_VERSION=7.0.0
+    - POCL_LLVM_VERSION=7.0.1
     - POCL_ROOT=${OPENCL_ROOT}/pocl-${POCL_BRANCH}/
     - POCL_LLVM_CONFIG=${DEPS_DIR}/llvm-${POCL_LLVM_VERSION}/bin/llvm-config
     - POCL_CXX_COMPILER=${DEPS_DIR}/llvm-${POCL_LLVM_VERSION}/bin/clang++
