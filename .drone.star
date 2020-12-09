@@ -30,6 +30,10 @@ def main(ctx):
 # Generate pipeline for Linux platform compilers.
 def linux_cxx(name, cxx, cxxflags="", packages="", llvm_os="", llvm_ver="", arch="amd64", image="cppalliance/droneubuntu1604:1", buildtype="boost", environment={}, stepenvironment={}, jobuuid="", privileged=False):
   environment_global = {
+      "TRAVIS_BUILD_DIR"="/drone/src"
+      "TRAVIS_BRANCH"="${DRONE_BRANCH}"
+      "TRAVIS_OS_NAME"="${DRONE_JOB_OS_NAME:-linux}"
+
       "CXX": cxx,
       "CXXFLAGS": cxxflags,
       "PACKAGES": packages,
