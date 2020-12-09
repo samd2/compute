@@ -18,7 +18,7 @@ echo '==================================> INSTALL'
 if [[ ${TRAVIS_OS_NAME} == "linux" ]]; then
   CMAKE_URL=${CMAKE_URL}
   mkdir -p ${DEPS_DIR}/cmake
-  travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C ${DEPS_DIR}/cmake
+  wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C ${DEPS_DIR}/cmake
   export PATH=${DEPS_DIR}/cmake/bin:${PATH}
 fi
 
@@ -31,7 +31,7 @@ if [[ ${TRAVIS_OS_NAME} == "linux" && ${BOOST_VERSION} != "default" ]]; then
     # Download
     BOOST_BASENAME=$(echo ${BOOST_VERSION} | awk -F '_' '{print $1 "." $2 "." $3 }')
     BOOST_URL="https://dl.bintray.com/boostorg/release/${BOOST_BASENAME}/source/boost_${BOOST_VERSION}.tar.gz"
-    travis_retry wget --no-check-certificate --quiet -O - ${BOOST_URL} | tar --strip-components=1 -xz -C ${DEPS_DIR}/boost${BOOST_VERSION}
+    wget --no-check-certificate --quiet -O - ${BOOST_URL} | tar --strip-components=1 -xz -C ${DEPS_DIR}/boost${BOOST_VERSION}
     pushd ${DEPS_DIR}/boost${BOOST_VERSION}
     # Configure and install
     if [ "$CXX" = "g++-${GCC_VERSION}" ]; then echo "using gcc : ${GCC_VERSION} : g++-${GCC_VERSION} ;" > $HOME/user-config.jam; fi
@@ -49,16 +49,16 @@ fi
 if [[ ${TRAVIS_OS_NAME} == "linux" ]]; then
   mkdir -p ${OPENCL_ROOT}/include/CL
   pushd ${OPENCL_ROOT}/include/CL
-  travis_retry git clone --depth 1 https://github.com/KhronosGroup/OpenCL-Headers.git
+  git clone --depth 1 https://github.com/KhronosGroup/OpenCL-Headers.git
   mv ./OpenCL-Headers/CL/* .
-  travis_retry wget -w 1 -np -nd -nv -A h,hpp --no-check-certificate ${OPENCL_REGISTRY}/api/2.1/cl.hpp;
+  wget -w 1 -np -nd -nv -A h,hpp --no-check-certificate ${OPENCL_REGISTRY}/api/2.1/cl.hpp;
   popd
 fi
 
 if [[ ${TRAVIS_OS_NAME} == "linux" && ${OPENCL_LIB} == "khronos-icd" ]]; then
   mkdir -p ${OPENCL_ROOT}
   pushd ${OPENCL_ROOT}
-  travis_retry git clone --depth 1 https://github.com/KhronosGroup/OpenCL-ICD-Loader.git icd
+  git clone --depth 1 https://github.com/KhronosGroup/OpenCL-ICD-Loader.git icd
   pushd icd
   mkdir -p inc/CL
   cp ${OPENCL_ROOT}/include/CL/* ./inc/CL/
@@ -69,7 +69,7 @@ fi
 
 if [[ ${TRAVIS_OS_NAME} == "linux" && ${OPENCL_LIB} == "pocl" ]]; then
   if [ -z "$(ls -A ${POCL_ROOT}/)" ]; then
-    travis_retry git clone --depth 1 https://github.com/pocl/pocl.git -b ${POCL_BRANCH}
+    git clone --depth 1 https://github.com/pocl/pocl.git -b ${POCL_BRANCH}
     cd pocl
     mkdir build
     cd build
