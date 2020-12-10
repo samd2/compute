@@ -91,6 +91,10 @@ if [[ ${TRAVIS_OS_NAME} == "linux" && ${OPENCL_LIB} == "intel" ]]; then
   sudo /tmp/${PACKAGE_NAME}/install.sh -s /tmp/${PACKAGE_NAME}/silent.cfg
 fi
 
+echo '==================================> BEFORE_SCRIPT'
+
+. .drone/before-script.sh
+
 echo '==================================> COMPILE'
 
 mkdir -p build
