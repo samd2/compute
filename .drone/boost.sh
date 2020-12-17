@@ -61,7 +61,7 @@ if [[ ${TRAVIS_OS_NAME} == "linux" && ${OPENCL_LIB} == "khronos-icd" ]]; then
   git clone --depth 1 https://github.com/KhronosGroup/OpenCL-ICD-Loader.git icd
   pushd icd
   mkdir -p inc/CL
-  cp ${OPENCL_ROOT}/include/CL/* ./inc/CL/
+  cp -r ${OPENCL_ROOT}/include/CL/* ./inc/CL/
   make -j2
   popd
   popd
