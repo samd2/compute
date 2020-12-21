@@ -7,3 +7,4 @@ if [ "$DRONE_JOB_UUID" = "b6589fc6ab" ] || [ "$DRONE_JOB_UUID" = "356a192b79" ] 
       cd .. && coveralls-lcov build/coverage.info
     fi
 fi
+

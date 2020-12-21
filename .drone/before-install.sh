@@ -22,11 +22,11 @@ if [ "$DRONE_JOB_UUID" = "b6589fc6ab" ] || [ "$DRONE_JOB_UUID" = "356a192b79" ] 
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -39,7 +39,8 @@ if [ "$DRONE_JOB_UUID" = "b6589fc6ab" ] || [ "$DRONE_JOB_UUID" = "356a192b79" ] 
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fiif [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
+fi
+if [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -61,11 +62,11 @@ fiif [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -78,7 +79,8 @@ fiif [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fiif [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] || [ "$DRONE_JOB_UUID" = "fe5dbbcea5" ] || [ "$DRONE_JOB_UUID" = "0ade7c2cf9" ] ; then
+fi
+if [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] || [ "$DRONE_JOB_UUID" = "fe5dbbcea5" ] || [ "$DRONE_JOB_UUID" = "0ade7c2cf9" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -100,11 +102,11 @@ fiif [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" 
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -117,7 +119,8 @@ fiif [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" 
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fiif [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
+fi
+if [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -139,11 +142,11 @@ fiif [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -156,7 +159,8 @@ fiif [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fiif [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
+fi
+if [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -178,11 +182,11 @@ fiif [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -195,7 +199,8 @@ fiif [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fiif [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] ; then
+fi
+if [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -217,11 +222,11 @@ fiif [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" 
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -230,7 +235,8 @@ fiif [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" 
     ${CXX} --version
     export CMAKE_OPTIONS=${CMAKE_OPTIONS}" "${ENV_CMAKE_OPTIONS}
     export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
-fiif [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
+fi
+if [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -251,11 +257,11 @@ fiif [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      true # brew update
-      /usr/bin/yes | true # pip uninstall numpy
-      true # brew outdated boost || true # brew upgrade boost
-      true # brew outdated cmake || true # brew upgrade cmake
-      true # brew install lcov # homebrew/science/opencv
+      true brew update
+      /usr/bin/yes | true pip uninstall numpy
+      true brew outdated boost || true brew upgrade boost
+      true brew outdated cmake || true brew upgrade cmake
+      true brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -265,3 +271,4 @@ fiif [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
     export CMAKE_OPTIONS=${CMAKE_OPTIONS}" "${ENV_CMAKE_OPTIONS}
     export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
 fi
+
