@@ -23,7 +23,7 @@ if [ "$DRONE_JOB_UUID" = "b6589fc6ab" ] || [ "$DRONE_JOB_UUID" = "356a192b79" ] 
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -39,8 +39,7 @@ if [ "$DRONE_JOB_UUID" = "b6589fc6ab" ] || [ "$DRONE_JOB_UUID" = "356a192b79" ] 
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fi
-if [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
+fiif [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -63,7 +62,7 @@ if [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -79,8 +78,7 @@ if [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fi
-if [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] || [ "$DRONE_JOB_UUID" = "fe5dbbcea5" ] || [ "$DRONE_JOB_UUID" = "0ade7c2cf9" ] ; then
+fiif [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] || [ "$DRONE_JOB_UUID" = "fe5dbbcea5" ] || [ "$DRONE_JOB_UUID" = "0ade7c2cf9" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -103,7 +101,7 @@ if [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] 
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -119,8 +117,7 @@ if [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] 
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fi
-if [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
+fiif [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -143,7 +140,7 @@ if [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -159,8 +156,7 @@ if [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fi
-if [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
+fiif [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -183,7 +179,7 @@ if [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -199,8 +195,7 @@ if [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
     tar -xvf lcov-1.14.tar.gz
     cd lcov-1.14
     make install && cd ..
-fi
-if [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] ; then
+fiif [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -223,7 +218,7 @@ if [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] 
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -235,8 +230,7 @@ if [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] 
     ${CXX} --version
     export CMAKE_OPTIONS=${CMAKE_OPTIONS}" "${ENV_CMAKE_OPTIONS}
     export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
-fi
-if [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
+fiif [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
     export DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
     export OPENCL_ROOT="${DEPS_DIR}/opencl"
     export OPENCL_ICD_LIB="${OPENCL_ROOT}/icd/build/lib/libOpenCL.so"
@@ -258,7 +252,7 @@ if [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
       true # brew update
-      /usr/bin/yes | pip uninstall numpy
+      /usr/bin/yes | true # pip uninstall numpy
       true # brew outdated boost || true # brew upgrade boost
       true # brew outdated cmake || true # brew upgrade cmake
       true # brew install lcov # homebrew/science/opencv
@@ -271,4 +265,3 @@ if [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
     export CMAKE_OPTIONS=${CMAKE_OPTIONS}" "${ENV_CMAKE_OPTIONS}
     export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
 fi
-
