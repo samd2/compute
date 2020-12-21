@@ -22,11 +22,11 @@ if [ "$DRONE_JOB_UUID" = "b6589fc6ab" ] || [ "$DRONE_JOB_UUID" = "356a192b79" ] 
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -62,11 +62,11 @@ if [ "$DRONE_JOB_UUID" = "ac3478d69a" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -102,11 +102,11 @@ if [ "$DRONE_JOB_UUID" = "c1dfd96eea" ] || [ "$DRONE_JOB_UUID" = "902ba3cda1" ] 
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -142,11 +142,11 @@ if [ "$DRONE_JOB_UUID" = "b1d5781111" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -182,11 +182,11 @@ if [ "$DRONE_JOB_UUID" = "17ba079149" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -222,11 +222,11 @@ if [ "$DRONE_JOB_UUID" = "7b52009b64" ] || [ "$DRONE_JOB_UUID" = "bd307a3ec3" ] 
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
@@ -257,11 +257,11 @@ if [ "$DRONE_JOB_UUID" = "fa35e19212" ] ; then
       fi
     # OSX
     elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
-      # brew update
+      true # brew update
       /usr/bin/yes | pip uninstall numpy
-      # brew outdated boost || # brew upgrade boost
-      # brew outdated cmake || # brew upgrade cmake
-      # brew install lcov # homebrew/science/opencv
+      true # brew outdated boost || true # brew upgrade boost
+      true # brew outdated cmake || true # brew upgrade cmake
+      true # brew install lcov # homebrew/science/opencv
     fi
 
     gem install coveralls-lcov
